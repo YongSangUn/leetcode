@@ -23,10 +23,4 @@ class Solution:
         pass
 
 
-# hash method
-# class Solution:
-
-#     def twoSum(self, nums, target):
-#         pass
-
 # @lc code=end
