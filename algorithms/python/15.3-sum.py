@@ -13,12 +13,14 @@ class Solution:
         return self.usingTwoPointers(nums)
 
     def usingTwoPointers(self, nums):
-        # pass
+        # avoid duplicate triplets.
         nums.sort()
         count = len(nums)
 
         if count < 3 or nums[0] > 0 or nums[-1] < 0:
             return []
+        elif nums[0] == nums[-1] == 0:
+            return [[0, 0, 0]]
 
         targetNum = []
         for i in range(count - 1):
